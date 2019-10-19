@@ -1,0 +1,16 @@
+It contains information 2 information about VEHICLE REGISTRATION CODES, KARNATAKA STATE
+
+REG : String
+RTO OFFICE / LOCATION : String
+DISTRICT : String
+
+columns are divided on "," and lines as ";"
+
+Example
+
+KA 01,BANGALORE CENTRAL (KORAMANGALA),BANGALORE URBAN;KA 02,BANGALORE WEST (RAJAJINAGAR),BANGALORE URBAN
+
+
+Where 
+KA 01 is REG value.
+BANGALORE CENTRAL (KORAMANGALA) is RTO OFFICE / LOCATION value

@@ -1,0 +1,14 @@
+It contains 8 column inforamtaion about a vehical
+
+name : String
+color : String
+Date of registration : String
+Place of registration : String
+Charsi number : String
+vehical number : String
+Owner name : String
+licence number : String
+
+Example:
+
+ZMR, black, 12/5/2013, bangalore, 1234, KA 01 A 234, name, KA1234455
