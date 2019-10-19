@@ -28,9 +28,9 @@ machines, and by bringing computation and data closer. The Figure 3.1, shows the
 MapReduce architectural diagram [9]. The Map and Reduce phases are handled by the
 programmer, whereas the Shuffle phase is created while the job is being carried out. The
 input data is split into smaller pieces called chunks, that normally have a size of 64 MB.
-The data is a
-serialized and distributed across machines that compose the Distributed File System
+The data is a serialized and distributed across machines that compose the Distributed File System
 (DFS).
+
 When running an application, the job is split by the master into several Map and Reduce
 tasks; following this, it assigns tasks to workers that then run each processing stage. The
 machine that is given a Map task, handles a Map function and emits key/value pairs as
@@ -38,12 +38,14 @@ intermediate results that are temporarily stored in the worker disks. The execut
 creates a computational barrier, which allows tasks to be synchronized between the Map
 and Reduce. A Reduce task does not start its processing until all the Map tasks have been
 completed.
+
 A hash function is applied to the intermediate data produced during the Map phase
 to determine which keys will compose a Reduce task. All the pairs combined with these
 keys are transferred to one machine, during the Shuffle, so that they can be processed by
 a Reduce task. After a reduction function has been applied to this data, a new key/value
 pair is issued. The result is then stored in the distributed file system and thus can be made
 available to the client who submitted the job.
+
 The Shuffle phase consists of two stages: one performed on the machine that
 processes the Map task, which sorts the keys and serializes the data. The other is
 performed after the intermediate data has been sent to the reducer machine, which
