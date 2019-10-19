@@ -24,8 +24,7 @@ of vehicle information across disparate data sources and types.
 
 MapReduce is a programming framework that abstracts the complexity of parallel
 applications by partitioning and scattering data sets across hundreds or thousands of
-machines, and by bringing computation and data closer. The Figure 3.1, shows the
-MapReduce architectural diagram [9]. The Map and Reduce phases are handled by the
+machines, and by bringing computation and data closer. The Map and Reduce phases are handled by the
 programmer, whereas the Shuffle phase is created while the job is being carried out. The
 input data is split into smaller pieces called chunks, that normally have a size of 64 MB.
 The data is a serialized and distributed across machines that compose the Distributed File System
