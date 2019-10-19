@@ -57,7 +57,7 @@ map phase to form the output for input data in the Reduce phase.
 
 This is a hadoop application which will take a vehical info as dataset.
 
-Before running make sure that "tempDataset" and "finalResult" is already present when you run below command
+Before running make sure that "tempDataset" and "finalResult" is not already present when you run below command
 
 hdfs dfs -ls
 
